@@ -48,6 +48,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="CardvalidatorTests.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PumpLogix\PumpLogix.csproj">
+      <Project>{A569F4DE-FB09-4921-9567-5C4628D1CA91}</Project>
+      <Name>PumpLogix</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
