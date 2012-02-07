@@ -3,14 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PumpLogix", "PumpLogix\PumpLogix.csproj", "{A569F4DE-FB09-4921-9567-5C4628D1CA91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PumpLogixTests", "PumpLogixTests\PumpLogixTests.csproj", "{D1E8BB0A-70A6-4FC0-A12F-D98B5CE85C8C}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3535F346-CECE-42CC-B4A0-B893027A52BA}"
 	ProjectSection(SolutionItems) = preProject
 		Local.testsettings = Local.testsettings
 		PumpLogix.vsmdi = PumpLogix.vsmdi
 		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PumpLogix.Tests", "PumpLogix.Tests\PumpLogix.Tests.csproj", "{EC7C972D-B16C-4373-82CD-DD3D6EA32C86}"
 EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
@@ -25,10 +25,10 @@ Global
 		{A569F4DE-FB09-4921-9567-5C4628D1CA91}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A569F4DE-FB09-4921-9567-5C4628D1CA91}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A569F4DE-FB09-4921-9567-5C4628D1CA91}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D1E8BB0A-70A6-4FC0-A12F-D98B5CE85C8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D1E8BB0A-70A6-4FC0-A12F-D98B5CE85C8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D1E8BB0A-70A6-4FC0-A12F-D98B5CE85C8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D1E8BB0A-70A6-4FC0-A12F-D98B5CE85C8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC7C972D-B16C-4373-82CD-DD3D6EA32C86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC7C972D-B16C-4373-82CD-DD3D6EA32C86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC7C972D-B16C-4373-82CD-DD3D6EA32C86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC7C972D-B16C-4373-82CD-DD3D6EA32C86}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
