@@ -25,5 +25,109 @@ public void IsCardNumberValid345()
     b = this.IsCardNumberValid("");
     Assert.AreEqual<bool>(false, b);
 }
+[TestMethod]
+[PexGeneratedBy(typeof(CardValidatorTest))]
+[PexRaisedException(typeof(FormatException))]
+public void IsCardNumberValidThrowsFormatException49()
+{
+    bool b;
+    b = this.IsCardNumberValid("\0\0\0\0\0\0\0\0\0\0\0\0\0\u0001\0");
+}
+[TestMethod]
+[PexGeneratedBy(typeof(CardValidatorTest))]
+[PexRaisedException(typeof(FormatException))]
+public void IsCardNumberValidThrowsFormatException612()
+{
+    bool b;
+    b = this.IsCardNumberValid("\0\0\0\0\0\0\0\0\0\0\0\0\00\0");
+}
+[TestMethod]
+[PexGeneratedBy(typeof(CardValidatorTest))]
+[PexRaisedException(typeof(FormatException))]
+public void IsCardNumberValidThrowsFormatException122()
+{
+    bool b;
+    b = this.IsCardNumberValid("\0\0\0\0\0\0\0\0\0\0\0\0\0:\0");
+}
+[TestMethod]
+[PexGeneratedBy(typeof(CardValidatorTest))]
+[PexRaisedException(typeof(FormatException))]
+public void IsCardNumberValidThrowsFormatException357()
+{
+    bool b;
+    b = this.IsCardNumberValid("\0\0\0\0\0\0\0\0\0\0\0\0\09\0");
+}
+[TestMethod]
+[PexGeneratedBy(typeof(CardValidatorTest))]
+[PexRaisedException(typeof(FormatException))]
+public void IsCardNumberValidThrowsFormatException218()
+{
+    bool b;
+    b = this.IsCardNumberValid("\0\0\0\0\0\0\0\0\0\0\00\05\0");
+}
+[TestMethod]
+[PexGeneratedBy(typeof(CardValidatorTest))]
+[PexRaisedException(typeof(FormatException))]
+public void IsCardNumberValidThrowsFormatException678()
+{
+    bool b;
+    b = this.IsCardNumberValid("\0\0\0\0\0\0\0\0\0\0\09\05\0");
+}
+[TestMethod]
+[PexGeneratedBy(typeof(CardValidatorTest))]
+[PexRaisedException(typeof(FormatException))]
+public void IsCardNumberValidThrowsFormatException464()
+{
+    bool b;
+    b = this.IsCardNumberValid("\0\0\0\0\0\0\00\00\05\05\0");
+}
+[TestMethod]
+[PexGeneratedBy(typeof(CardValidatorTest))]
+[PexRaisedException(typeof(FormatException))]
+public void IsCardNumberValidThrowsFormatException161()
+{
+    bool b;
+    b = this.IsCardNumberValid("-0-0-0-0-0-5-5-");
+}
+[TestMethod]
+[PexGeneratedBy(typeof(CardValidatorTest))]
+[PexRaisedException(typeof(FormatException))]
+public void IsCardNumberValidThrowsFormatException111()
+{
+    bool b;
+    b = this.IsCardNumberValid("\00\00\00\00\00\05\050");
+}
+[TestMethod]
+[PexGeneratedBy(typeof(CardValidatorTest))]
+[PexRaisedException(typeof(FormatException))]
+public void IsCardNumberValidThrowsFormatException740()
+{
+    bool b;
+    b = this.IsCardNumberValid("\00\00\00\00\00\05050");
+}
+[TestMethod]
+[PexGeneratedBy(typeof(CardValidatorTest))]
+[ExpectedException(typeof(ArgumentNullException))]
+public void IsCardNumberValidThrowsArgumentNullException617()
+{
+    bool b;
+    b = this.IsCardNumberValid((string)null);
+}
+[TestMethod]
+[PexGeneratedBy(typeof(CardValidatorTest))]
+public void IsCardNumberValid25()
+{
+    bool b;
+    b = this.IsCardNumberValid("000000000005050");
+    Assert.AreEqual<bool>(false, b);
+}
+[TestMethod]
+[PexGeneratedBy(typeof(CardValidatorTest))]
+[ExpectedException(typeof(ArgumentException))]
+public void IsCardNumberValidThrowsArgumentException179()
+{
+    bool b;
+    b = this.IsCardNumberValid("\0\0\0\0\0\0\0\0\0\0\0\0\0-\0");
+}
     }
 }

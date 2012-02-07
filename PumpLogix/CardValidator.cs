@@ -6,11 +6,17 @@ namespace PumpLogix
     {
         public static bool IsCardNumberValid(string cardNumber)
         {
+            // <pex>
+            if (cardNumber == (string)null)
+                throw new ArgumentNullException("cardNumber");
+            // </pex>
+
             // Minimum threshold is 15 digits.
             if (cardNumber.Length < 15)
-            {
                 return false;
-            }
+
+            if (!System.Text.RegularExpressions.Regex.IsMatch(cardNumber, "^[0-9]{15,16}$"))
+                throw new ArgumentException("The card number must consist of only digits.");
 
             // Use the LUHN formula to verify the CC number.
             int startingPos = cardNumber.Length - 2;
