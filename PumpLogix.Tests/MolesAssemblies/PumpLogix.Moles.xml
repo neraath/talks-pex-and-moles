@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PumpLogix.Moles</name>
+    </assembly>
+    <members>
+        <member name="T:PumpLogix.Moles.MCardValidator">
+            <summary>Mole type of <see cref="T:PumpLogix.CardValidator"/>
+            .</summary>
+        </member>
+        <member name="M:PumpLogix.Moles.MCardValidator.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:PumpLogix.Moles.MCardValidator.#ctor(PumpLogix.CardValidator)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:PumpLogix.Moles.MCardValidator.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:PumpLogix.Moles.MCardValidator.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:PumpLogix.Moles.MCardValidator.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:PumpLogix.Moles.MCardValidator.Constructor">
+            <summary>Sets the mole of <see cref="M:PumpLogix.CardValidator.#ctor"/>
+            </summary>
+        </member>
+        <member name="P:PumpLogix.Moles.MCardValidator.IsCardNumberValidString">
+            <summary>Sets the mole of <see cref="M:PumpLogix.CardValidator.IsCardNumberValid(System.String)"/>
+            </summary>
+        </member>
+        <member name="T:PumpLogix.Moles.MCardValidator.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="T:PumpLogix.Moles.SCardValidator">
+            <summary>Stub type of <see cref="T:PumpLogix.CardValidator"/>
+            .</summary>
+        </member>
+        <member name="M:PumpLogix.Moles.SCardValidator.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:PumpLogix.Moles.SCardValidator.InitializeStub">
+            <summary>Initializes a new instance of type SCardValidator</summary>
+        </member>
+        <member name="P:PumpLogix.Moles.SCardValidator.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:PumpLogix.Moles.SCardValidator.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+    </members>
+</doc>
