@@ -46,5 +46,13 @@ namespace PumpLogix
             PexAssume.TrueForAny(cardNumber, cardCharacter => !char.IsDigit(cardCharacter));
             PexAssume.IsFalse(CardValidator.IsCardNumberValid(cardNumber));
         }
+
+        [PexMethod]
+        public void TestCvvCodeLength([PexAssumeNotNull] string cvvCode)
+        {
+            PexAssume.IsTrue(cvvCode.Length >= 3 && cvvCode.Length <= 4);
+            PexAssume.TrueForAny(cvvCode, codeDigit => char.IsDigit(codeDigit));
+            PexAssume.IsTrue(CardValidator.IsCvvCodeValid(cvvCode));
+        }
     }
 }

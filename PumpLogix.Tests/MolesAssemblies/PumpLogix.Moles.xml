@@ -31,6 +31,10 @@
             <summary>Sets the mole of <see cref="M:PumpLogix.CardValidator.IsCardNumberValid(System.String)"/>
             </summary>
         </member>
+        <member name="P:PumpLogix.Moles.MCardValidator.IsCvvCodeValidString">
+            <summary>Sets the mole of <see cref="M:PumpLogix.CardValidator.IsCvvCodeValid(System.String)"/>
+            </summary>
+        </member>
         <member name="T:PumpLogix.Moles.MCardValidator.AllInstances">
             <summary>Define moles for all instances members</summary>
         </member>

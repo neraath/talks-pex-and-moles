@@ -65,6 +65,9 @@
       <DependentUpon>CardValidatorTest.cs</DependentUpon>
     </Compile>
     <Compile Include="CardValidatorManualTests.cs" />
+    <Compile Include="CardValidatorTest.TestCvvCodeLength.g.cs">
+      <DependentUpon>CardValidatorTest.cs</DependentUpon>
+    </Compile>
     <Compile Include="CardValidatorTest.TestInvalidCharacters.g.cs">
       <DependentUpon>CardValidatorTest.cs</DependentUpon>
     </Compile>

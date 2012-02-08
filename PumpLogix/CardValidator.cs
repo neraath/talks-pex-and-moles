@@ -43,5 +43,12 @@ namespace PumpLogix
             // We should have a value that's mod10.
             return summation%10 == 0;
         }
+
+        public static bool IsCvvCodeValid(string cvvCode)
+        {
+            if (string.IsNullOrEmpty(cvvCode)) throw new ArgumentNullException("cvvCode");
+            if (cvvCode.Length < 3 || cvvCode.Length > 4) return false;
+            return true;
+        }
     }
 }
