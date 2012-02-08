@@ -35,8 +35,173 @@
             <summary>Sets the mole of <see cref="M:PumpLogix.CardValidator.IsCvvCodeValid(System.String)"/>
             </summary>
         </member>
+        <member name="P:PumpLogix.Moles.MCardValidator._IsCvvCodeValidb__0Char">
+            <summary>Sets the mole of <see cref="M:PumpLogix.CardValidator.&lt;IsCvvCodeValid&gt;b__0(System.Char)"/>
+            </summary>
+        </member>
         <member name="T:PumpLogix.Moles.MCardValidator.AllInstances">
             <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="T:PumpLogix.Moles.MCostDisplay">
+            <summary>Mole type of <see cref="T:PumpLogix.CostDisplay"/>
+            .</summary>
+        </member>
+        <member name="M:PumpLogix.Moles.MCostDisplay.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:PumpLogix.Moles.MCostDisplay.#ctor(PumpLogix.CostDisplay)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:PumpLogix.Moles.MCostDisplay.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:PumpLogix.Moles.MCostDisplay.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:PumpLogix.Moles.MCostDisplay.Bind(PumpLogix.IShowCost)">
+            <summary>Binds the members of the interface to the mole.</summary>
+        </member>
+        <member name="P:PumpLogix.Moles.MCostDisplay.AddAmountDispensedDouble">
+            <summary>Sets the mole of <see cref="M:PumpLogix.CostDisplay.AddAmountDispensed(System.Double)"/>
+            </summary>
+        </member>
+        <member name="P:PumpLogix.Moles.MCostDisplay.AmountDispensedGet">
+            <summary>Sets the mole of <see cref="P:PumpLogix.CostDisplay.AmountDispensed"/>
+            </summary>
+        </member>
+        <member name="P:PumpLogix.Moles.MCostDisplay.AmountDispensedSetDouble">
+            <summary>Sets the mole of <see cref="P:PumpLogix.CostDisplay.AmountDispensed"/>
+            </summary>
+        </member>
+        <member name="P:PumpLogix.Moles.MCostDisplay.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:PumpLogix.Moles.MCostDisplay.Constructor">
+            <summary>Sets the mole of <see cref="M:PumpLogix.CostDisplay.#ctor"/>
+            </summary>
+        </member>
+        <member name="P:PumpLogix.Moles.MCostDisplay.GetCostDoubleDouble">
+            <summary>Sets the mole of <see cref="M:PumpLogix.CostDisplay.GetCost(System.Double,System.Double)"/>
+            </summary>
+        </member>
+        <member name="T:PumpLogix.Moles.MCostDisplay.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:PumpLogix.Moles.MCostDisplay.AllInstances.AddAmountDispensedDouble">
+            <summary>Sets the mole of <see cref="M:PumpLogix.CostDisplay.AddAmountDispensed(System.Double)"/>
+            </summary>
+        </member>
+        <member name="P:PumpLogix.Moles.MCostDisplay.AllInstances.AmountDispensedGet">
+            <summary>Sets the mole of <see cref="P:PumpLogix.CostDisplay.AmountDispensed"/>
+            </summary>
+        </member>
+        <member name="P:PumpLogix.Moles.MCostDisplay.AllInstances.AmountDispensedSetDouble">
+            <summary>Sets the mole of <see cref="P:PumpLogix.CostDisplay.AmountDispensed"/>
+            </summary>
+        </member>
+        <member name="P:PumpLogix.Moles.MCostDisplay.AllInstances.GetCostDoubleDouble">
+            <summary>Sets the mole of <see cref="M:PumpLogix.CostDisplay.GetCost(System.Double,System.Double)"/>
+            </summary>
+        </member>
+        <member name="T:PumpLogix.Moles.MPumpOperations">
+            <summary>Mole type of <see cref="T:PumpLogix.PumpOperations"/>
+            .</summary>
+        </member>
+        <member name="M:PumpLogix.Moles.MPumpOperations.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:PumpLogix.Moles.MPumpOperations.#ctor(PumpLogix.PumpOperations)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:PumpLogix.Moles.MPumpOperations.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:PumpLogix.Moles.MPumpOperations.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:PumpLogix.Moles.MPumpOperations.BeginPumpingFuelType">
+            <summary>Sets the mole of <see cref="M:PumpLogix.PumpOperations.BeginPumping(PumpLogix.FuelType)"/>
+            </summary>
+        </member>
+        <member name="P:PumpLogix.Moles.MPumpOperations.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:PumpLogix.Moles.MPumpOperations.Constructor">
+            <summary>Sets the mole of <see cref="M:PumpLogix.PumpOperations.#ctor"/>
+            </summary>
+        </member>
+        <member name="T:PumpLogix.Moles.MPumpOperations.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:PumpLogix.Moles.MPumpOperations.AllInstances.BeginPumpingFuelType">
+            <summary>Sets the mole of <see cref="M:PumpLogix.PumpOperations.BeginPumping(PumpLogix.FuelType)"/>
+            </summary>
+        </member>
+        <member name="T:PumpLogix.Moles.MValveController">
+            <summary>Mole type of <see cref="T:PumpLogix.ValveController"/>
+            .</summary>
+        </member>
+        <member name="M:PumpLogix.Moles.MValveController.#ctor">
+            <summary>Initializes a new mole</summary>
+        </member>
+        <member name="M:PumpLogix.Moles.MValveController.#ctor(PumpLogix.ValveController)">
+            <summary>Initializes a new mole for the given instance</summary>
+        </member>
+        <member name="M:PumpLogix.Moles.MValveController.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="M:PumpLogix.Moles.MValveController.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:PumpLogix.Moles.MValveController.BeginPumping">
+            <summary>Sets the mole of <see cref="M:PumpLogix.ValveController.BeginPumping"/>
+            </summary>
+        </member>
+        <member name="P:PumpLogix.Moles.MValveController.Behavior">
+            <summary>Assigns the behavior for all methods of the moled type</summary>
+        </member>
+        <member name="P:PumpLogix.Moles.MValveController.CloseValve">
+            <summary>Sets the mole of <see cref="M:PumpLogix.ValveController.CloseValve"/>
+            </summary>
+        </member>
+        <member name="P:PumpLogix.Moles.MValveController.ConstructorInt32">
+            <summary>Sets the mole of <see cref="M:PumpLogix.ValveController.#ctor(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="P:PumpLogix.Moles.MValveController.OpenValve">
+            <summary>Sets the mole of <see cref="M:PumpLogix.ValveController.OpenValve"/>
+            </summary>
+        </member>
+        <member name="P:PumpLogix.Moles.MValveController.ReadAmountDispensed">
+            <summary>Sets the mole of <see cref="M:PumpLogix.ValveController.ReadAmountDispensed"/>
+            </summary>
+        </member>
+        <member name="P:PumpLogix.Moles.MValveController.StopPumping">
+            <summary>Sets the mole of <see cref="M:PumpLogix.ValveController.StopPumping"/>
+            </summary>
+        </member>
+        <member name="T:PumpLogix.Moles.MValveController.AllInstances">
+            <summary>Define moles for all instances members</summary>
+        </member>
+        <member name="P:PumpLogix.Moles.MValveController.AllInstances.BeginPumping">
+            <summary>Sets the mole of <see cref="M:PumpLogix.ValveController.BeginPumping"/>
+            </summary>
+        </member>
+        <member name="P:PumpLogix.Moles.MValveController.AllInstances.CloseValve">
+            <summary>Sets the mole of <see cref="M:PumpLogix.ValveController.CloseValve"/>
+            </summary>
+        </member>
+        <member name="P:PumpLogix.Moles.MValveController.AllInstances.OpenValve">
+            <summary>Sets the mole of <see cref="M:PumpLogix.ValveController.OpenValve"/>
+            </summary>
+        </member>
+        <member name="P:PumpLogix.Moles.MValveController.AllInstances.ReadAmountDispensed">
+            <summary>Sets the mole of <see cref="M:PumpLogix.ValveController.ReadAmountDispensed"/>
+            </summary>
+        </member>
+        <member name="P:PumpLogix.Moles.MValveController.AllInstances.StopPumping">
+            <summary>Sets the mole of <see cref="M:PumpLogix.ValveController.StopPumping"/>
+            </summary>
         </member>
         <member name="T:PumpLogix.Moles.SCardValidator">
             <summary>Stub type of <see cref="T:PumpLogix.CardValidator"/>
@@ -52,6 +217,69 @@
             <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
         </member>
         <member name="P:PumpLogix.Moles.SCardValidator.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:PumpLogix.Moles.SCostDisplay">
+            <summary>Stub type of <see cref="T:PumpLogix.CostDisplay"/>
+            .</summary>
+        </member>
+        <member name="M:PumpLogix.Moles.SCostDisplay.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:PumpLogix.Moles.SCostDisplay.InitializeStub">
+            <summary>Initializes a new instance of type SCostDisplay</summary>
+        </member>
+        <member name="P:PumpLogix.Moles.SCostDisplay.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:PumpLogix.Moles.SCostDisplay.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="T:PumpLogix.Moles.SIShowCost">
+            <summary>Stub type of <see cref="T:PumpLogix.IShowCost"/>
+            .</summary>
+        </member>
+        <member name="M:PumpLogix.Moles.SIShowCost.#ctor">
+            <summary>Initializes a new instance of type SIShowCost</summary>
+        </member>
+        <member name="F:PumpLogix.Moles.SIShowCost.AddAmountDispensedDouble">
+            <summary>Sets the stub of <see cref="M:PumpLogix.IShowCost.AddAmountDispensed(System.Double)"/>
+            </summary>
+        </member>
+        <member name="F:PumpLogix.Moles.SIShowCost.AmountDispensedGet">
+            <summary>Sets the stub of <see cref="P:PumpLogix.IShowCost.AmountDispensed"/>
+            </summary>
+        </member>
+        <member name="F:PumpLogix.Moles.SIShowCost.GetCostDoubleDouble">
+            <summary>Sets the stub of <see cref="M:PumpLogix.IShowCost.GetCost(System.Double,System.Double)"/>
+            </summary>
+        </member>
+        <member name="M:PumpLogix.Moles.SIShowCost.pl::PumpLogix#IShowCost#AddAmountDispensed(System.Double)">
+            <summary>Sets the stub of <see cref="M:PumpLogix.IShowCost.AddAmountDispensed(System.Double)"/>
+            </summary>
+        </member>
+        <member name="M:PumpLogix.Moles.SIShowCost.pl::PumpLogix#IShowCost#GetCost(System.Double,System.Double)">
+            <summary>Sets the stub of <see cref="M:PumpLogix.IShowCost.GetCost(System.Double,System.Double)"/>
+            </summary>
+        </member>
+        <member name="P:PumpLogix.Moles.SIShowCost.pl::PumpLogix#IShowCost#AmountDispensed">
+            <summary>Sets the stub of <see cref="P:PumpLogix.IShowCost.AmountDispensed"/>
+            </summary>
+        </member>
+        <member name="T:PumpLogix.Moles.SPumpOperations">
+            <summary>Stub type of <see cref="T:PumpLogix.PumpOperations"/>
+            .</summary>
+        </member>
+        <member name="M:PumpLogix.Moles.SPumpOperations.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:PumpLogix.Moles.SPumpOperations.InitializeStub">
+            <summary>Initializes a new instance of type SPumpOperations</summary>
+        </member>
+        <member name="P:PumpLogix.Moles.SPumpOperations.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:PumpLogix.Moles.SPumpOperations.InstanceBehavior">
             <summary>Gets or sets the instance behavior.</summary>
         </member>
     </members>
