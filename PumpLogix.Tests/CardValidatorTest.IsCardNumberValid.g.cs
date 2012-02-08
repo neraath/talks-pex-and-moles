@@ -19,6 +19,14 @@ namespace PumpLogix
     {
 [TestMethod]
 [PexGeneratedBy(typeof(CardValidatorTest))]
+[ExpectedException(typeof(ArgumentNullException))]
+public void IsCardNumberValidThrowsArgumentNullException288()
+{
+    bool b;
+    b = this.IsCardNumberValid((string)null);
+}
+[TestMethod]
+[PexGeneratedBy(typeof(CardValidatorTest))]
 public void IsCardNumberValid345()
 {
     bool b;
@@ -27,27 +35,35 @@ public void IsCardNumberValid345()
 }
 [TestMethod]
 [PexGeneratedBy(typeof(CardValidatorTest))]
-[ExpectedException(typeof(ArgumentNullException))]
-public void IsCardNumberValidThrowsArgumentNullException617()
+[ExpectedException(typeof(ArgumentException))]
+public void IsCardNumberValidThrowsArgumentException39()
 {
     bool b;
-    b = this.IsCardNumberValid((string)null);
+    b = this.IsCardNumberValid(new string('\0', 15));
 }
 [TestMethod]
 [PexGeneratedBy(typeof(CardValidatorTest))]
-public void IsCardNumberValid25()
+public void IsCardNumberValid130()
 {
     bool b;
-    b = this.IsCardNumberValid("000000000005050");
+    b = this.IsCardNumberValid(new string('0', 15));
+    Assert.AreEqual<bool>(true, b);
+}
+[TestMethod]
+[PexGeneratedBy(typeof(CardValidatorTest))]
+public void IsCardNumberValid164()
+{
+    bool b;
+    b = this.IsCardNumberValid("000000000000050");
     Assert.AreEqual<bool>(false, b);
 }
 [TestMethod]
 [PexGeneratedBy(typeof(CardValidatorTest))]
-[ExpectedException(typeof(ArgumentException))]
-public void IsCardNumberValidThrowsArgumentException179()
+public void IsCardNumberValid555()
 {
     bool b;
-    b = this.IsCardNumberValid("\0\0\0\0\0\0\0\0\0\0\0\0\0-\0");
+    b = this.IsCardNumberValid("050000000000050");
+    Assert.AreEqual<bool>(false, b);
 }
     }
 }

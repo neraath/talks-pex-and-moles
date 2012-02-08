@@ -21,5 +21,30 @@ namespace PumpLogix
             return result;
             // TODO: add assertions to method CardValidatorTest.IsCardNumberValid(String)
         }
+
+        [PexMethod]
+        public void TestValidCardNumber([PexAssumeNotNull] string cardNumber)
+        {
+            PexAssume.IsTrue(cardNumber.Length >= 15);
+            PexAssume.TrueForAll(cardNumber, cardDigit => char.IsDigit(cardDigit));
+            PexAssume.IsTrue(CardValidator.IsCardNumberValid(cardNumber));
+        }
+
+        [PexMethod]
+        public void TestInvalidLength(string cardNumber)
+        {
+            PexAssume.IsNotNullOrEmpty(cardNumber);
+            PexAssume.IsTrue(cardNumber.Length < 15);
+            PexAssume.TrueForAll(cardNumber, digit => char.IsDigit(digit));
+            PexAssume.IsFalse(CardValidator.IsCardNumberValid(cardNumber));
+        }
+
+        [PexMethod]
+        public void TestInvalidCharacters([PexAssumeNotNull] string cardNumber)
+        {
+            PexAssume.IsTrue(cardNumber.Length >= 15);
+            PexAssume.TrueForAny(cardNumber, cardCharacter => !char.IsDigit(cardCharacter));
+            PexAssume.IsFalse(CardValidator.IsCardNumberValid(cardNumber));
+        }
     }
 }
