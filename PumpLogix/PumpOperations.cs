@@ -5,12 +5,16 @@ namespace PumpLogix
     public class PumpOperations
     {
         private ValveController controller;
-        private CostDisplay costDisplay;
+        private IShowCost costDisplay;
 
-        public PumpOperations()
+        public PumpOperations() : this(new CostDisplay(), new ValveController(1))
         {
-            this.controller = new ValveController(1);
-            this.costDisplay = new CostDisplay();
+        }
+
+        public PumpOperations(IShowCost costDisplay, ValveController valveController)
+        {
+            this.controller = valveController;
+            this.costDisplay = costDisplay;
         }
 
         public void BeginPumping(FuelType fuelType)

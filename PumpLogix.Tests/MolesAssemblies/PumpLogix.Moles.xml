@@ -130,6 +130,10 @@
             <summary>Sets the mole of <see cref="M:PumpLogix.PumpOperations.#ctor"/>
             </summary>
         </member>
+        <member name="P:PumpLogix.Moles.MPumpOperations.ConstructorIShowCostValveController">
+            <summary>Sets the mole of <see cref="M:PumpLogix.PumpOperations.#ctor(PumpLogix.IShowCost,PumpLogix.ValveController)"/>
+            </summary>
+        </member>
         <member name="T:PumpLogix.Moles.MPumpOperations.AllInstances">
             <summary>Define moles for all instances members</summary>
         </member>
@@ -271,6 +275,9 @@
             .</summary>
         </member>
         <member name="M:PumpLogix.Moles.SPumpOperations.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:PumpLogix.Moles.SPumpOperations.#ctor(PumpLogix.IShowCost,PumpLogix.ValveController)">
             <summary>Initializes a new instance</summary>
         </member>
         <member name="M:PumpLogix.Moles.SPumpOperations.InitializeStub">

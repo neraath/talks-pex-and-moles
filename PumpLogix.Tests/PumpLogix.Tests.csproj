@@ -89,6 +89,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\PexAssemblyInfo.cs" />
     <Compile Include="PumpOperationsManualTests.cs" />
+    <Compile Include="PumpOperationsTestsWithStubs.cs" />
   </ItemGroup>
   <ItemGroup>
     <Moles Include="PumpLogix.moles" />
