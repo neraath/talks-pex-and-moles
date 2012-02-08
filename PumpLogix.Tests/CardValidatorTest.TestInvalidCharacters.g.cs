@@ -19,7 +19,7 @@ namespace PumpLogix
 [TestMethod]
 [PexGeneratedBy(typeof(CardValidatorTest))]
 [ExpectedException(typeof(ArgumentException))]
-public void TestInvalidCharactersThrowsArgumentException184()
+public void TestInvalidCharactersThrowsArgumentException265()
 {
     this.TestInvalidCharacters(new string('\0', 15));
 }

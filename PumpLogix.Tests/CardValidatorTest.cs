@@ -48,11 +48,30 @@ namespace PumpLogix
         }
 
         [PexMethod]
-        public void TestCvvCodeLength([PexAssumeNotNull] string cvvCode)
+        public void TestCvvCodeValue([PexAssumeNotNull] string cvvCode)
         {
             PexAssume.IsTrue(cvvCode.Length >= 3 && cvvCode.Length <= 4);
-            PexAssume.TrueForAny(cvvCode, codeDigit => char.IsDigit(codeDigit));
+            PexAssume.TrueForAll(cvvCode, codeDigit => char.IsDigit(codeDigit));
+            PexAssume.IsTrue(cvvCode.StartsWith("3") || cvvCode.EndsWith("4"));
             PexAssume.IsTrue(CardValidator.IsCvvCodeValid(cvvCode));
+        }
+
+        [PexMethod]
+        public void TestBadCvvCodeLength([PexAssumeNotNull] string cvvCode)
+        {
+            PexAssume.IsFalse(cvvCode.Length >= 3 && cvvCode.Length <= 4);
+            PexAssume.TrueForAll(cvvCode, codeDigit => char.IsDigit(codeDigit));
+            PexAssume.IsTrue(cvvCode.StartsWith("3") || cvvCode.EndsWith("4"));
+            PexAssume.IsFalse(CardValidator.IsCvvCodeValid(cvvCode));
+        }
+
+        [PexMethod]
+        public void TestBadCvvCodeValue([PexAssumeNotNull] string cvvCode)
+        {
+            PexAssume.IsTrue(cvvCode.Length >= 3 && cvvCode.Length <= 4);
+            PexAssume.TrueForAll(cvvCode, codeDigit => char.IsDigit(codeDigit));
+            PexAssume.IsFalse(cvvCode.StartsWith("3") || cvvCode.EndsWith("4"));
+            PexAssume.IsFalse(CardValidator.IsCvvCodeValid(cvvCode));
         }
     }
 }

@@ -16,11 +16,5 @@ namespace PumpLogix
 {
     public partial class CardValidatorTest
     {
-[TestMethod]
-[PexGeneratedBy(typeof(CardValidatorTest))]
-public void TestCvvCodeLength783()
-{
-    this.TestCvvCodeLength("\0\00");
-}
     }
 }

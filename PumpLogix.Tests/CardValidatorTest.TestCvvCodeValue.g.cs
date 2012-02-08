@@ -18,28 +18,15 @@ namespace PumpLogix
     {
 [TestMethod]
 [PexGeneratedBy(typeof(CardValidatorTest))]
-public void TestValidCardNumber407()
+public void TestCvvCodeValue790()
 {
-    this.TestValidCardNumber(new string('0', 15));
+    this.TestCvvCodeValue("3000");
 }
 [TestMethod]
 [PexGeneratedBy(typeof(CardValidatorTest))]
-public void TestValidCardNumber501()
+public void TestCvvCodeValue519()
 {
-    this.TestValidCardNumber("228484127254698");
-}
-[TestMethod]
-[PexGeneratedBy(typeof(CardValidatorTest))]
-public void TestValidCardNumber207()
-{
-    this.TestValidCardNumber("000000000005090");
-}
-[TestMethod]
-[PexGeneratedBy(typeof(CardValidatorTest))]
-[ExpectedException(typeof(ArgumentException))]
-public void TestValidCardNumberThrowsArgumentException860()
-{
-    this.TestValidCardNumber(new string('0', 17));
+    this.TestCvvCodeValue("004");
 }
     }
 }

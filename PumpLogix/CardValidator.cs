@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace PumpLogix
 {
@@ -48,7 +49,9 @@ namespace PumpLogix
         {
             if (string.IsNullOrEmpty(cvvCode)) throw new ArgumentNullException("cvvCode");
             if (cvvCode.Length < 3 || cvvCode.Length > 4) return false;
-            return true;
+            if (cvvCode.ToCharArray().Any(x => !char.IsDigit(x))) return false;
+            if (cvvCode[0].Equals('3') || cvvCode[cvvCode.Length - 1].Equals('4')) return true;
+            return false;
         }
     }
 }

@@ -20,7 +20,7 @@ namespace PumpLogix
 [TestMethod]
 [PexGeneratedBy(typeof(CardValidatorTest))]
 [ExpectedException(typeof(ArgumentNullException))]
-public void IsCardNumberValidThrowsArgumentNullException288()
+public void IsCardNumberValidThrowsArgumentNullException856()
 {
     bool b;
     b = this.IsCardNumberValid((string)null);
@@ -36,7 +36,7 @@ public void IsCardNumberValid345()
 [TestMethod]
 [PexGeneratedBy(typeof(CardValidatorTest))]
 [ExpectedException(typeof(ArgumentException))]
-public void IsCardNumberValidThrowsArgumentException39()
+public void IsCardNumberValidThrowsArgumentException949()
 {
     bool b;
     b = this.IsCardNumberValid(new string('\0', 15));
