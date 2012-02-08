@@ -160,20 +160,20 @@
         <member name="P:PumpLogix.Moles.MValveController.Behavior">
             <summary>Assigns the behavior for all methods of the moled type</summary>
         </member>
-        <member name="P:PumpLogix.Moles.MValveController.CloseValve">
-            <summary>Sets the mole of <see cref="M:PumpLogix.ValveController.CloseValve"/>
+        <member name="P:PumpLogix.Moles.MValveController.CloseValveFuelType">
+            <summary>Sets the mole of <see cref="M:PumpLogix.ValveController.CloseValve(PumpLogix.FuelType)"/>
             </summary>
         </member>
         <member name="P:PumpLogix.Moles.MValveController.ConstructorInt32">
             <summary>Sets the mole of <see cref="M:PumpLogix.ValveController.#ctor(System.Int32)"/>
             </summary>
         </member>
-        <member name="P:PumpLogix.Moles.MValveController.OpenValve">
-            <summary>Sets the mole of <see cref="M:PumpLogix.ValveController.OpenValve"/>
+        <member name="P:PumpLogix.Moles.MValveController.OpenValveFuelType">
+            <summary>Sets the mole of <see cref="M:PumpLogix.ValveController.OpenValve(PumpLogix.FuelType)"/>
             </summary>
         </member>
-        <member name="P:PumpLogix.Moles.MValveController.ReadAmountDispensed">
-            <summary>Sets the mole of <see cref="M:PumpLogix.ValveController.ReadAmountDispensed"/>
+        <member name="P:PumpLogix.Moles.MValveController.ReadAmountDispensedFuelType">
+            <summary>Sets the mole of <see cref="M:PumpLogix.ValveController.ReadAmountDispensed(PumpLogix.FuelType)"/>
             </summary>
         </member>
         <member name="P:PumpLogix.Moles.MValveController.StopPumping">
@@ -187,16 +187,16 @@
             <summary>Sets the mole of <see cref="M:PumpLogix.ValveController.BeginPumping"/>
             </summary>
         </member>
-        <member name="P:PumpLogix.Moles.MValveController.AllInstances.CloseValve">
-            <summary>Sets the mole of <see cref="M:PumpLogix.ValveController.CloseValve"/>
+        <member name="P:PumpLogix.Moles.MValveController.AllInstances.CloseValveFuelType">
+            <summary>Sets the mole of <see cref="M:PumpLogix.ValveController.CloseValve(PumpLogix.FuelType)"/>
             </summary>
         </member>
-        <member name="P:PumpLogix.Moles.MValveController.AllInstances.OpenValve">
-            <summary>Sets the mole of <see cref="M:PumpLogix.ValveController.OpenValve"/>
+        <member name="P:PumpLogix.Moles.MValveController.AllInstances.OpenValveFuelType">
+            <summary>Sets the mole of <see cref="M:PumpLogix.ValveController.OpenValve(PumpLogix.FuelType)"/>
             </summary>
         </member>
-        <member name="P:PumpLogix.Moles.MValveController.AllInstances.ReadAmountDispensed">
-            <summary>Sets the mole of <see cref="M:PumpLogix.ValveController.ReadAmountDispensed"/>
+        <member name="P:PumpLogix.Moles.MValveController.AllInstances.ReadAmountDispensedFuelType">
+            <summary>Sets the mole of <see cref="M:PumpLogix.ValveController.ReadAmountDispensed(PumpLogix.FuelType)"/>
             </summary>
         </member>
         <member name="P:PumpLogix.Moles.MValveController.AllInstances.StopPumping">

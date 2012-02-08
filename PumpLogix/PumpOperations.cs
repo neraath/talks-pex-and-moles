@@ -14,16 +14,16 @@
         public void BeginPumping(FuelType fuelType)
         {
             // Pump.
-            this.controller.OpenValve();
+            this.controller.OpenValve(fuelType);
             this.controller.BeginPumping();
 
             // Monitor.
-            double amountDispensed = this.controller.ReadAmountDispensed();
+            double amountDispensed = this.controller.ReadAmountDispensed(fuelType);
             this.costDisplay.AddAmountDispensed(amountDispensed);
 
             // Stop.);
             this.controller.StopPumping();
-            this.controller.CloseValve();
+            this.controller.CloseValve(fuelType);
         }
     }
 }
