@@ -1,4 +1,6 @@
-﻿namespace PumpLogix
+﻿using System;
+
+namespace PumpLogix
 {
     public class PumpOperations
     {
@@ -13,17 +15,25 @@
 
         public void BeginPumping(FuelType fuelType)
         {
-            // Pump.
-            this.controller.OpenValve(fuelType);
-            this.controller.BeginPumping();
+            try
+            {
+                // Pump.
+                this.controller.OpenValve(fuelType);
+                this.controller.BeginPumping();
 
-            // Monitor.
-            double amountDispensed = this.controller.ReadAmountDispensed(fuelType);
-            this.costDisplay.AddAmountDispensed(amountDispensed);
-
-            // Stop.);
-            this.controller.StopPumping();
-            this.controller.CloseValve(fuelType);
+                // Monitor.
+                double amountDispensed = this.controller.ReadAmountDispensed(fuelType);
+                this.costDisplay.AddAmountDispensed(amountDispensed);
+            }
+            catch (Exception)
+            {
+            }
+            finally
+            {
+                // Stop.
+                this.controller.StopPumping();
+                this.controller.CloseValve(fuelType);
+            }
         }
     }
 }
